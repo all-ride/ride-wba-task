@@ -1,0 +1,32 @@
+{
+    "routes": [
+        {
+            "path": "/admin/tasks",
+            "controller": "ride\\web\\base\\controller\\TaskController",
+            "action": "selectAction",
+            "methods": ["HEAD", "GET", "POST"],
+            "id": "admin.task.select"
+        },
+        {
+            "path": "/admin/tasks/%task%",
+            "controller": "ride\\web\\base\\controller\\TaskController",
+            "action": "invokeAction",
+            "methods": ["HEAD", "GET", "POST"],
+            "id": "admin.task.invoke"
+        },
+        {
+            "path": "/admin/tasks/%task%/%job%",
+            "controller": "ride\\web\\base\\controller\\TaskController",
+            "action": "progressAction",
+            "methods": ["HEAD", "GET", "POST"],
+            "id": "admin.task.progress"
+        },
+        {
+            "path": "/admin/tasks/%task%/%job%/finish",
+            "controller": "ride\\web\\base\\controller\\TaskController",
+            "action": "finishAction",
+            "methods": ["HEAD", "GET"],
+            "id": "admin.task.finish"
+        }
+    ]
+}

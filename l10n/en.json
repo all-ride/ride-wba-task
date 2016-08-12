@@ -1,0 +1,10 @@
+{
+    "button.next": "Next",
+    "button.invoke": "Invoke",
+    "label.task": "Task",
+    "label.task.finish.description": "Your task has been succesfully executed.",
+    "label.task.none": "There are no tasks available.",
+    "label.task.progress.description": "Please wait while your task is being processed...",
+    "label.task.select.description": "Select the task you want to invoke",
+    "title.tasks": "Tasks"
+}
