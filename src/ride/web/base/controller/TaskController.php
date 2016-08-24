@@ -27,7 +27,7 @@ class TaskController extends AbstractController {
 
         $taskOptions = array();
 
-        $tasks = $this->dependencyInjector->getAll(Task::class);
+        $tasks = $this->dependencyInjector->getAll('ride\\web\\base\\task\\Task');
         foreach ($tasks as $taskId => $task) {
             $taskOptions[$taskId] = $task->getDisplayName($translator);
         }
@@ -77,7 +77,7 @@ class TaskController extends AbstractController {
         $taskId = $task;
 
         try {
-            $task = $this->dependencyInjector->get(Task::class, $taskId);
+            $task = $this->dependencyInjector->get('ride\\web\\base\\task\\Task', $taskId);
         } catch (DependencyException $exception) {
             $this->response->setNotFound();
 
@@ -131,7 +131,7 @@ class TaskController extends AbstractController {
         $taskId = $task;
 
         try {
-            $task = $this->dependencyInjector->get(Task::class, $taskId);
+            $task = $this->dependencyInjector->get('ride\\web\\base\\task\\Task', $taskId);
         } catch (DependencyException $exception) {
             $this->response->setNotFound();
 
@@ -165,7 +165,7 @@ class TaskController extends AbstractController {
         $jobId = $job;
 
         try {
-            $task = $this->dependencyInjector->get(Task::class, $taskId);
+            $task = $this->dependencyInjector->get('ride\\web\\base\\task\\Task', $taskId);
         } catch (DependencyException $exception) {
             $this->response->setNotFound();
 

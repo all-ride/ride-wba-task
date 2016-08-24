@@ -1,0 +1,10 @@
+{
+    "button.next": "Volgende",
+    "button.invoke": "Aanmaken",
+    "label.task": "Taak",
+    "label.task.finish.description": "Uw taak is met succes uitgevoerd.",
+    "label.task.none": "Er zijn geen taken beschikbaar.",
+    "label.task.progress.description": "Een ogenblik geduld, uw taak wordt verwerkt...",
+    "label.task.select.description": "Selecteer de taak die u wilt aanmaken",
+    "title.tasks": "Taken"
+}
